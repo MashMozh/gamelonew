@@ -878,17 +878,17 @@ def day_2():
                     b, c, d, a = (0,) * 4
                     print(RESULT_D16_2)
         case 5:
-            print("Посмотреть мотивационный ролик?" "(Введи 1, если да и 2, если нет)")
+            print(DEPENDENT_17)
             awns = int(input())
             match awns:
                 case 1:
                     b = 80
                     a, c, d, e = (0,) * 4
-                    print("Ты набрался мотивации, задачи стали решаться как по маслу")
+                    print(RESULT_D17_1)
                 case 2:
                     e = -80
                     c, d, a, b = (0,) * 4
-                    print("Не посмтрел и пожалел об этом, состояние уменьшилось")
+                    print(RESULT_D17_2)
     k = int(input(""))
     match k:
         case 1:
@@ -912,9 +912,7 @@ def day_2():
             lk = lk + c
             tchr = tchr + d
             cnd = cnd + e
-    print("Закончился второй день, завтра уже экзамен, "
-          "хоть выспись сегодня, завтра грандиозный день."
-          "Переходим к следующей команде(нажми enter,чтобы продолжить)")
+    print(CONCLUSION_DAY_2)
     print(th, tsks, lk, tchr, cnd)
 
 
