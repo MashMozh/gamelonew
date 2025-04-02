@@ -1,0 +1,277 @@
+def day_3():
+    print(f"{lcl.INTRODUCTION_DAY_3}")
+    th, tsks, lk, tchr, cnd = map(int, input().split())
+    cases = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    m = random.choice(cases)
+    match m:
+        case 1:
+            e = 50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITION_R_11}")
+        case 2:
+            e = -50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITION_R_12}"
+                  "(сигма сигма боой, сигма бой, сигма бой...")
+        case 3:
+            c = 100
+            e = 40
+            a, b, d = (0,) * 3
+            print(f"{lcl.LUCK_R_9}")
+        case 4:
+            print(f"{lcl.THEORY_R_8}")
+            a = 80
+            e, b, c, d = (0,) * 4
+        case 5:
+            c = -80
+            a, b, d, e = (0,) * 4
+            print(f"{lcl.LUCK_R_10}")
+        case 6:
+            b = 80
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_8}")
+        case 7:
+            b = -70
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_7}")
+        case 8:
+            a = -80
+            e, b, c, d = (0,) * 4
+            print(f"{lcl.THEORY_R_9}")
+        case 9:
+            d = 50
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_9}")
+        case 10:
+            d = -90
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_10}")
+
+    k = int(input(""))
+    match k:
+        case 1:
+            student_1(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 2:
+            student_2(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 3:
+            student_3(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+    cases_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    m = random.choice(cases_1)
+    match m:
+        case 1:
+            e = 50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITIONING_R_13}")
+        case 2:
+            e = -50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITIONING_R_14}")
+        case 3:
+            c = 100
+            e = 40
+            a, b, d = (0,) * 3
+            print(f"{lcl.LUCK_R_11}")
+        case 4:
+            print(f"{lcl.THEORY_R_10}")
+            a = 80
+            e, b, c, d = (0,) * 4
+        case 5:
+            c = -80
+            a, b, d, e = (0,) * 4
+            print(f"{lcl.LUCK_R_10}")
+        case 6:
+            b = 80
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_8}ач")
+        case 7:
+            b = -70
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_9}")
+        case 8:
+            a = -80
+            e, b, c, d = (0,) * 4
+            print(f"{lcl.THEORY_R_9}")
+        case 9:
+            d = 50
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_9}")
+        case 10:
+            d = -90
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_11}")
+
+    k = int(input(""))
+    match k:
+        case 1:
+            student_1(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 2:
+            student_2(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 3:
+            student_3(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+    cases_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    m = random.choice(cases_2)
+    match m:
+        case 1:
+            e = 50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITION_R_11}")
+        case 2:
+            e = -50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITION_R_12}")
+        case 3:
+            c = 100
+            a, b, d, e = (0,) * 4
+            print(f"{lcl.LUCK_R_12}")
+        case 4:
+            print(f"{lcl.THEORY_R_11}")
+            a = 80
+            c = 80
+            e, b, d = (0,) * 3
+        case 5:
+            c = -80
+            a, b, d, e = (0,) * 4
+            print(f"{lcl.LUCK_R_10}")
+        case 6:
+            b = 80
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_10}")
+        case 7:
+            b = -70
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_7}")
+        case 8:
+            a = -80
+            b = -80
+            e, c, d = (0,) * 3
+            print(f"{lcl.TASKS_R_11}")
+        case 9:
+            d = 50
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_9}")
+        case 10:
+            d = -90
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_10}")
+
+    k = int(input(""))
+    match k:
+        case 1:
+            student_1(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 2:
+            student_2(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 3:
+            student_3(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+    cases_3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    m = random.choice(cases_3)
+    match m:
+        case 1:
+            e = 50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITION_R_11}")
+        case 2:
+            e = -50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITION_R_12}")
+        case 3:
+            c = 100
+            e = 40
+            a, b, d = (0,) * 3
+            print(f"{lcl.LUCK_R_9}")
+        case 4:
+            print(f"{lcl.THEORY_R_8}")
+            a = 80
+            e, b, c, d = (0,) * 4
+        case 5:
+            c = -80
+            a, b, d, e = (0,) * 4
+            print(f"{lcl.LUCK_R_10}")
+        case 6:
+            b = 80
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_8}")
+        case 7:
+            b = -70
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_7}")
+        case 8:
+            a = -80
+            e, b, c, d = (0,) * 4
+            print(f"{lcl.THEORY_R_9}")
+        case 9:
+            d = 50
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_9}")
+        case 10:
+            d = -90
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_10}")
+
+    k = int(input(""))
+    match k:
+        case 1:
+            student_1(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 2:
+            student_2(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 3:
+            student_3(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
